@@ -1,0 +1,243 @@
+head{
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.navbar{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-desk{
+    color: #0D2F81;
+    display: block;
+
+}
+
+.menu-mobile{
+    display: none;
+
+}
+
+.headbanner{
+    height: 300px;
+    background: linear-gradient(to bottom, white, #0D2F81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    color: azure;
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-text-stroke: 3px #0D2F81;
+
+}
+
+.outter-div{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.eventContent{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.eventContent2{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+.inner-div1{
+    height: 50px;
+    width: 580px;
+    background-color: #6E7EB2;
+    margin: 20px 10px 10px 10px;
+
+}
+
+.spot-img1{
+    width: 280px;
+    height: 210px;
+
+}
+
+.spot-text1{
+    color: azure;
+    font-weight: bold;
+
+}
+
+.inner-div2{
+    height: 280px;
+    width: 580px; /* why?? */
+    background-color: #6E7EB2;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.spot-img2{
+    width: 100%;
+    height: 100%;
+
+}
+
+.spot-text2{
+    flex: none;
+    height: 50px;
+    width: 280px;
+    color: azure;
+    background-color: #6E7EB2;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left : 0; right : 0; bottom : 0;
+    z-index: 1;
+    padding-top: 18px;
+}
+
+.readmore{
+    margin: 40px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 44%;
+
+    width: 110px;
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #0D2F81;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 8px;
+    transition: linear;
+    transition-duration: 0.5s;
+}
+
+.readmore:hover{
+    width: 130px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+@media (max-width: 1200px){
+    .outter-div{
+        margin: 0 5% 5% 5%;
+        width: auto;
+    
+    }
+
+    .eventContent2{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .inner-div1{
+        width: 90%;
+
+    }
+
+    .inner-div2{
+        width: 90%;
+        overflow: hidden;
+
+    }
+
+    .spot-img1{
+        width: auto;
+    }
+
+    .spot-img2{
+        width: 150%;
+        height: auto;
+
+    }
+
+    .spot-text2{
+        width: 100%;
+        position: absolute;
+        left : 0; right : 0; bottom : 0;
+        z-index: 1;
+
+    }
+
+}
+
+@media (max-width: 600px){
+    .menu-desk{
+        display: none;
+
+    }
+    .menu-mobile{
+        display: block;
+
+    }
+
+    .headline{
+        font-size: 25px;
+        color: azure;
+        -webkit-text-stroke: 1px azure;
+
+    }
+
+    .headbanner{
+        margin: 0 0 10px 0;
+    }
+
+    .eventContent{
+        grid-template-columns: 1fr;
+        place-self: center;
+
+    }
+
+    .eventContent2{
+        grid-template-columns: 1fr;
+        place-self: center;
+
+    }
+
+    .inner-div1{
+        width: 90%;
+        margin: 10px 10px 10px 10px;
+
+    }
+
+    .inner-div2{
+        width: 90%;
+
+    }
+
+    .spot-img2{
+        width: 120%;
+        height: auto;
+
+    }
+
+
+}
