@@ -1,4 +1,3 @@
-from unittest import result
 import urllib.request as req
 url="https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assignment.json"
 
